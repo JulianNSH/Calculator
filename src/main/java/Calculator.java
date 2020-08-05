@@ -1,7 +1,7 @@
 
 public class Calculator {
     public static void main(String[] args) {
-        double result=0;
+        double result;
 
         //creating objects
         Menu option = new Menu();
@@ -16,7 +16,7 @@ public class Calculator {
             option.inputMenu();
 
             //send values to method and get the result of operation
-            result= calc.doCalc(a, option.x, option.y, result);
+            result= calc.doCalc(a, option.x, option.y);
 
             //show the answer in console
             option.showResult(result);
